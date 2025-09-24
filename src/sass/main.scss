@@ -25,6 +25,8 @@ header {
   a {
     text-decoration: none;
     color: variables.$white;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
     &:hover {
       color: variables.$violet;
     }

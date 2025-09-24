@@ -7,6 +7,9 @@
     color: white;
     padding: 10px 20px;
     border-radius: variables.$button-radius;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    text-decoration: none;
   &:hover{
     background-color: variables.$violet-hover;
   }
