@@ -1,17 +1,21 @@
 @use "variables" as variables;
 @use "components" as components;
 @use "mixins" as mixins;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   background-color: variables.$background-color_1;
+  font-family: 'Nunito', sans-serif;
+  color: variables.$white;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 5em;
+  margin: 0 0;
   background-color: variables.$background-color_1;
   box-shadow: 0 0 2rem -15px pink;
 }
@@ -37,9 +41,19 @@ header {
 }
 .MercrediTop {
   max-width: 70rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 4rem auto;
   border-radius: 20px;
   border: solid 3px variables.$violet;
+}
+
+.FilmsVedette {
+  font-size: 1.3em;
+  padding: 0.5em 5em;
+}
+
+.FilmsVedetteGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
 }

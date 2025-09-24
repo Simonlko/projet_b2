@@ -2,7 +2,7 @@
 @use "../mixins" as mixins;
 
 @layer components {
-  .buttonIndex {
+  .ButtonIndex {
     background-color: variables.$violet;
     color: white;
     padding: 10px 20px;
