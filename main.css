@@ -36,4 +36,6 @@ header {
     max-width: 70rem;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
+    border:solid 3px #960EF3;
 }
