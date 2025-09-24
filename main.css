@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.5em 5em;
     background-color: #0D0620;
     box-shadow: 0 0 2rem -15px pink;
 }
@@ -20,5 +20,20 @@ header {
 .Navlinks {
     list-style: none;
     display: flex;
-    gap: 4rem;
+    gap: 3em;
+}
+
+.Navlinks a {
+    text-decoration: none;
+    color: white;
+}
+
+.Navlinks a:hover {
+    color: #960EF3;
+}
+
+.MercrediTop {
+    max-width: 70rem;
+    display: flex;
+    justify-content: center;
 }
