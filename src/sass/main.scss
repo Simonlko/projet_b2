@@ -1,8 +1,43 @@
-@layer base, components;
+@use "variables" as variables;
+@use "components" as components;
+@use "mixins" as mixins;
 
-@layer base {
-  body {
-    font-family: Dialog, sans-serif;
-    background-color: aquamarine;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: variables.$background-color_1;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 5em;
+  background-color: variables.$background-color_1;
+  box-shadow: 0 0 2rem -15px pink;
+}
+.LogoNav {
+  max-width: 10rem;
+}
+.Navlinks {
+  list-style: none;
+  display: flex;
+  gap: 3em;
+  a {
+    text-decoration: none;
+    color: variables.$white;
+    &:hover {
+      color: variables.$violet;
+    }
   }
+}
+.MenuBurger {
+  display: none;
+}
+.MercrediTop {
+  max-width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: solid 3px variables.$violet;
 }

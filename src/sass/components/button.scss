@@ -1,0 +1,14 @@
+@use "../variables" as variables;
+@use "../mixins" as mixins;
+
+@layer components {
+  .buttonIndex {
+    background-color: variables.$violet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: variables.$button-radius;
+  &:hover{
+    background-color: variables.$violet-hover;
+  }
+  }
+}
